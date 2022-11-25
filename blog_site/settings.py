@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mr)myt)=jzo!tb7(e=qnz8u#!t0$^#6=%gy*k-#qy6*h(_=2tb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['149.28.247.188']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -76,14 +76,11 @@ WSGI_APPLICATION = 'blog_site.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'orablog',
-        'USER': 'ora',
-        'PASSWORD': 'ora9525',
-        'HOST': 'localhost'
-        'PORT': ''
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation
